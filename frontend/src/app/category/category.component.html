@@ -1,0 +1,20 @@
+<div class="list-of-authors">
+
+  <h1>Список категорий</h1>
+
+  <div *ngFor="let category of categories" class="main-div-of-listgroup" routerLink="/genres/{{category.id}}">
+
+    <img src="{{category.image}}" alt="author-images" class="authors-images">
+
+    <div class="authors-names-div">
+
+      <h2>
+        {{category.name}}
+      </h2>
+
+    </div>
+
+  </div>
+
+
+</div>

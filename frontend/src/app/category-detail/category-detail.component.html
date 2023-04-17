@@ -1,0 +1,15 @@
+<div class="main-page-books-cont">
+
+  <div *ngFor="let book of books" routerLink="/book/{{book.id}}" class="top-products-books-example" id="top-products-books-last">
+
+    <img src="{{book.image}}" alt="TopProducts" class="top-products-books-img">
+
+    <p class="top-products-books-name">{{book.category}}</p>
+
+    <p class="top-products-books-price">${{book.price}}</p>
+
+
+  </div>
+
+
+</div>

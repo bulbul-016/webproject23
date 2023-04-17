@@ -1,0 +1,54 @@
+<div class="main-nav">
+  <nav class="header">
+    <img src="https://www.chitai-gorod.ru/ii/img/logo/main_logo_white.svg" alt="logo">
+
+    <form class="form-inline">
+      <input (click)="searchAuthor()" class="form-control mr-sm-2" id="main-searchiing-field" type="search" placeholder="Искать" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" id="main-searching-button" type="submit"><i class="fas fa-search" id="main-searching-font"></i></button>
+    </form>
+
+    <a class="main-cart" >
+      <p *ngIf="!logged" id="cart-words-main" routerLink="/login"><strong>Аккаунт</strong></p>
+      <p *ngIf="logged" id="cart-words-main2">{{user.username}}</p>
+      <i class="fas fa-user-circle" id="cart-logo"></i>
+      <p *ngIf="logged" (click)="logOut()"><i class="fas fa-sign-out-alt"></i></p>
+    </a>
+
+  </nav>
+
+</div>
+
+<div class="second-navs-wrapper">
+
+  <div class="second-navs">
+
+    <div class="dropdown">
+      <button class="dropbtn" routerLink="/home">ГЛАВНАЯ</button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" routerLink="/genres">КАТЕГОРИИ</button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" routerLink="/authors">АВТОРЫ</button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" href="#about-us container" routerLink="/books">КНИГИ</button>
+    </div>
+
+    <!-- <div class="dropdown">
+      <button class="dropbtn">КОНТАКТЫ</button>
+    </div> -->
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>
+
+
+<div *ngIf="logged">
+<router-outlet></router-outlet>
+<button (click)="logOut()">Выйти</button>-->
+</div> 

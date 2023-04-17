@@ -1,0 +1,15 @@
+<div class="author-detail-styles">
+  <h2>{{book.name}}</h2>
+  <img src="{{book.image}}" alt="photo-of-the-writer" class="author-detail-photo">
+  <h3>О книге</h3>
+  <p class="book-detail-div">{{book.description}}</p>
+</div>
+
+
+
+<div *ngFor="let comment of comments">
+
+  <p>{{comment.nameofuser}}</p>
+  <p>{{comment.commenttext}}</p>
+
+</div>

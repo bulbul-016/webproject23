@@ -1,0 +1,50 @@
+.author-detail-styles{
+  text-align: center;
+}
+
+.author-detail-photo{
+  width: 15%;
+}
+
+
+.main-page-books-cont{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top-products-books-example{
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 100%/4 - 3%;
+
+}
+
+
+.top-products-books-img{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.top-products-books-name{
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.top-products-books-raiting{
+  color: #ffb503;
+}
+
+.top-products-books-price{
+  font-size: 16px;
+  line-height: 16px;
+  margin: 12px 0 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+#top-products-books-last{
+  padding-right: 20px;
+}

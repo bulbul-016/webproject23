@@ -1,0 +1,24 @@
+<div class="author-detail-styles">
+  <h2>{{author.name}}</h2>
+  <img src="{{author.image}}" alt="photo-of-the-writer" class="author-detail-photo">
+  <h6>О писателе</h6>
+  <p>{{author.biography}}</p>
+</div>
+
+
+
+<div class="main-page-books-cont">
+
+  <div *ngFor="let book of books" class="top-products-books-example" id="top-products-books-last">
+
+    <img src="{{book.image}}" alt="TopProducts" class="top-products-books-img">
+
+    <p class="top-products-books-name">{{book.category}}</p>
+
+    <p class="top-products-books-price">${{book.price}}</p>
+
+
+  </div>
+
+
+</div>
